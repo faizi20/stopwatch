@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        body {
+            background-color: darkgrey;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 70vh
+        }
+
+        h1 {
+            display: inline-block;
+            text-align: center;
+            background-color: white;
+            width: 100px;
+            border-radius: 50px;
+
+        }
+
+        button {
+            border-radius: 50px;
+            border: none;
+            width: 100px;
+            height: 30px;
+            font-size: 12px;
+            cursor: pointer;
+            outline: 0;
+        }
+
+        h2 {
+            font-size: 60px;
+            border: 2px solid black;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 15px;
+        }
+
+        button:active {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>STOP WATCH</h1>
+    </div>
+    <div>
+        <h1 id="min">0</h1>
+        <h1 id="sec">0</h1>
+        <h1 id="msec">0</h1>
+    </div>
+    <div>
+        <button onclick="start()" id="button"> <i class="fa fa-play" aria-hidden="true"></i></button>
+        <button style="background-color: red; color: white;" onclick="pause()"><i class="fa fa-pause"
+                aria-hidden="true"></i></button>
+        <button onclick="reset()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
